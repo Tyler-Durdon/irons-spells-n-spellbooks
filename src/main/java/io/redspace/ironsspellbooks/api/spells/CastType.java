@@ -4,7 +4,8 @@ public enum CastType {
     NONE(0),
     INSTANT(1),
     LONG(2),
-    CONTINUOUS(3);
+    CONTINUOUS(3),
+    CHARGED(4);
 
     private final int value;
 
@@ -17,6 +18,6 @@ public enum CastType {
     }
 
     public boolean immediatelySuppressRightClicks() {
-        return this == LONG || this == CONTINUOUS;
+        return this == LONG || this == CONTINUOUS || this == CHARGED;
     }
 }

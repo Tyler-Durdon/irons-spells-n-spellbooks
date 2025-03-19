@@ -67,6 +67,7 @@ import io.redspace.ironsspellbooks.entity.spells.shield.ShieldTrimModel;
 import io.redspace.ironsspellbooks.entity.spells.skull_projectile.SkullProjectileRenderer;
 import io.redspace.ironsspellbooks.entity.spells.small_magic_arrow.SmallMagicArrowRenderer;
 import io.redspace.ironsspellbooks.entity.spells.spectral_hammer.SpectralHammerRenderer;
+import io.redspace.ironsspellbooks.entity.spells.stone_lance.StoneLanceRenderer;
 import io.redspace.ironsspellbooks.entity.spells.summoned_weapons.SummonedClaymoreModel;
 import io.redspace.ironsspellbooks.entity.spells.summoned_weapons.SummonedRapierModel;
 import io.redspace.ironsspellbooks.entity.spells.summoned_weapons.SummonedSwordModel;
@@ -245,6 +246,7 @@ public class ClientSetup {
         event.registerEntityRenderer(EntityRegistry.MAGIC_ARROW_PROJECTILE.get(), MagicArrowRenderer::new);
         event.registerEntityRenderer(EntityRegistry.FIRE_ARROW_PROJECTILE.get(), FireArrowRenderer::new);
         event.registerEntityRenderer(EntityRegistry.FIERY_DAGGER_PROJECTILE.get(), FieryDaggerRenderer::new);
+        event.registerEntityRenderer(EntityRegistry.STONE_LANCE_PROJECTILE.get(), StoneLanceRenderer::new);
         event.registerEntityRenderer(EntityRegistry.FIRE_ERUPTION_AOE.get(), NoopRenderer::new);
         event.registerEntityRenderer(EntityRegistry.FROZEN_HUMANOID.get(), FrozenHumanoidRenderer::new);
         event.registerEntityRenderer(EntityRegistry.SMALL_FIREBALL_PROJECTILE.get(), (context) -> new FireballRenderer(context, 0.75f));

@@ -33,7 +33,7 @@ import java.util.UUID;
 public class FireArrowProjectile extends AbstractMagicProjectile {
     public FireArrowProjectile(EntityType<? extends Projectile> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-        super.setNoGravity(true); // avoid lcoal gravity flag by using super
+        super.setNoGravity(true); // avoid local gravity flag by using super
     }
 
     public FireArrowProjectile(Level pLevel, LivingEntity pShooter) {

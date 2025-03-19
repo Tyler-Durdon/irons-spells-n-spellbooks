@@ -406,6 +406,8 @@
   "ui.irons_spellbooks.wandering_trader_scroll": "Any %s Scroll",
   "ui.irons_spellbooks.sacrifice_target_failure": "You must target one of your summons",
   "ui.irons_spellbooks.empty_spellbook_lectern": "This Spellbook is empty...",
+  "ui.irons_spellbooks.max_damage": "Max Damage: %s",
+  "ui.irons_spellbooks.charge_time": "Max Charge Time: %s seconds",
 
   "school.irons_spellbooks.fire": "Fire",
   "school.irons_spellbooks.ice": "Ice",
@@ -571,6 +573,7 @@
   "spell.irons_spellbooks.raise_hell": "Raise Hell",
   "spell.irons_spellbooks.summon_swords": "Summon Swords",
   "spell.irons_spellbooks.touch_dig": "Touch Dig",
+  "spell.irons_spellbooks.stone_canon": "Stone Canon",
   "spell.irons_spellbooks.none.guide": "Nothing to see here!",
   "spell.irons_spellbooks.fireball.guide": "Manifest and throw a ball of fire, exploding and dealing massive damage on impact.",
   "spell.irons_spellbooks.burning_dash.guide": "Quickly launch yourself forward in a haze of fire, searing creatures you pass through while in a blaze.",
@@ -674,6 +677,7 @@
   "spell.irons_spellbooks.raise_hell.guide": "Slam down your weapon to wreath a fiery shockwave in a large radius around you. Damage scales based on the held weapon.",
   "spell.irons_spellbooks.summon_swords.guide": "Conjure a trio of spectral armaments to aid in battle: a brawling shortsword, a quick rapier, and a tanking claymore. Created by the ancient magician known as Hazentouvel.",
   "spell.irons_spellbooks.touch_dig.guide": "Use magic to break a block. Held items affect drops.",
+  "spell.irons_spellbooks.stone_canon.guide": "Charge up a powerful stone lance that deals more damage the longer it's charged.",
   "death.attack.blood_magic": "%1$s blood magic 1",
   "death.attack.blood_magic.item": "%1$s blood magic 2",
   "death.attack.blood_magic.player": "%1$s blood magic 3",
@@ -1171,5 +1175,5 @@
   "material.irons_spellbooks.rune_protection": "Protection Rune",
   "material.irons_spellbooks.rune_nature": "Nature Rune",
   "material.irons_spellbooks.divine_pearl": "Divine Pearl",
-  "action.irons_spellbooks.explode.arcane": "Arcane"
+  "action.irons_spellbooks.explode.arcane": "Arcane",
 }

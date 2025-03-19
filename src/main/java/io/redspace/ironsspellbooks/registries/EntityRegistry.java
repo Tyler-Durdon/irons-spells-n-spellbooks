@@ -58,6 +58,7 @@ import io.redspace.ironsspellbooks.entity.spells.root.RootEntity;
 import io.redspace.ironsspellbooks.entity.spells.shield.ShieldEntity;
 import io.redspace.ironsspellbooks.entity.spells.small_magic_arrow.SmallMagicArrow;
 import io.redspace.ironsspellbooks.entity.spells.spectral_hammer.SpectralHammer;
+import io.redspace.ironsspellbooks.entity.spells.stone_lance.StoneLanceProjectile;
 import io.redspace.ironsspellbooks.entity.spells.summoned_weapons.SummonedClaymoreEntity;
 import io.redspace.ironsspellbooks.entity.spells.summoned_weapons.SummonedRapierEntity;
 import io.redspace.ironsspellbooks.entity.spells.summoned_weapons.SummonedSwordEntity;
@@ -75,7 +76,6 @@ import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
 
 public class EntityRegistry {
     private static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(Registries.ENTITY_TYPE, IronsSpellbooks.MODID);
@@ -575,6 +575,13 @@ public class EntityRegistry {
                     .sized(1f, 1f)
                     .clientTrackingRange(64)
                     .build(new ResourceLocation(IronsSpellbooks.MODID, "summoned_rapier").toString()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<StoneLanceProjectile>> STONE_LANCE_PROJECTILE = ENTITIES.register("stone_lance_projectile",
+            () -> EntityType.Builder.<StoneLanceProjectile>of(StoneLanceProjectile::new, MobCategory.MISC)
+                    .sized(0.5F, 0.5F)
+                    .clientTrackingRange(4)
+                    .updateInterval(10)
+                    .build("stone_lance_projectile"));
 
 }
 

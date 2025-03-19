@@ -2,6 +2,7 @@ package io.redspace.ironsspellbooks.api.registry;
 
 import io.redspace.ironsspellbooks.IronsSpellbooks;
 import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
+import io.redspace.ironsspellbooks.api.spells.ISpellContainer;
 import io.redspace.ironsspellbooks.api.spells.SchoolType;
 import io.redspace.ironsspellbooks.spells.NoneSpell;
 import io.redspace.ironsspellbooks.spells.blood.*;
@@ -177,7 +178,7 @@ public class SpellRegistry {
     public static final Supplier<AbstractSpell> ELECTROCUTE_SPELL = registerSpell(new ElectrocuteSpell());
     public static final Supplier<AbstractSpell> LIGHTNING_BOLT_SPELL = registerSpell(new LightningBoltSpell());
     public static final Supplier<AbstractSpell> LIGHTNING_LANCE_SPELL = registerSpell(new LightningLanceSpell());
-//    public static final Supplier<AbstractSpell> THUNDER_STEP_SPELL = registerSpell(new ThunderStepSpell());
+    //    public static final Supplier<AbstractSpell> THUNDER_STEP_SPELL = registerSpell(new ThunderStepSpell());
     public static final Supplier<AbstractSpell> SHOCKWAVE_SPELL = registerSpell(new ShockwaveSpell());
     public static final Supplier<AbstractSpell> THUNDERSTORM_SPELL = registerSpell(new ThunderstormSpell());
     public static final Supplier<AbstractSpell> BALL_LIGHTNING_SPELL = registerSpell(new BallLightningSpell());
@@ -196,6 +197,7 @@ public class SpellRegistry {
     public static final Supplier<AbstractSpell> STOMP_SPELL = registerSpell(new StompSpell());
     public static final Supplier<AbstractSpell> GLUTTONY_SPELL = registerSpell(new GluttonySpell());
     public static final Supplier<AbstractSpell> TOUCH_DIG = registerSpell(new TouchDigSpell());
+    public static final Supplier<AbstractSpell> STONE_CANON_SPELL = registerSpell(new StoneCanonSpell());
 
     //VOID
     public static final Supplier<AbstractSpell> ABYSSAL_SHROUD_SPELL = registerSpell(new AbyssalShroudSpell());
