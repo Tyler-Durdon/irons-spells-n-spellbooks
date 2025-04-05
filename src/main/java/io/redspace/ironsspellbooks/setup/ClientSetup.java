@@ -156,6 +156,7 @@ public class ClientSetup {
         event.registerLayerDefinition(EldritchBlastRenderer.MODEL_LAYER_LOCATION, EldritchBlastRenderer::createBodyLayer);
         event.registerLayerDefinition(FireballRenderer.MODEL_LAYER_LOCATION, FireballRenderer::createBodyLayer);
         event.registerLayerDefinition(FireboltRenderer.MODEL_LAYER_LOCATION, FireboltRenderer::createBodyLayer);
+        event.registerLayerDefinition(StoneLanceRenderer.MODEL_LAYER_LOCATION, StoneLanceRenderer::createBodyLayer);
         event.registerLayerDefinition(GuidingBoltRenderer.MODEL_LAYER_LOCATION, GuidingBoltRenderer::createBodyLayer);
         event.registerLayerDefinition(IcicleRenderer.MODEL_LAYER_LOCATION, IcicleRenderer::createBodyLayer);
         event.registerLayerDefinition(ShieldTrimModel.LAYER_LOCATION, ShieldTrimModel::createBodyLayer);
@@ -224,6 +225,7 @@ public class ClientSetup {
         event.registerEntityRenderer(EntityRegistry.BLOOD_SLASH_PROJECTILE.get(), BloodSlashRenderer::new);
         event.registerEntityRenderer(EntityRegistry.ELECTROCUTE_PROJECTILE.get(), ElectrocuteRenderer::new);
         event.registerEntityRenderer(EntityRegistry.FIREBOLT_PROJECTILE.get(), FireboltRenderer::new);
+        event.registerEntityRenderer(EntityRegistry.STONE_LANCE_PROJECTILE.get(), StoneLanceRenderer::new);
         event.registerEntityRenderer(EntityRegistry.ICICLE_PROJECTILE.get(), IcicleRenderer::new);
         event.registerEntityRenderer(EntityRegistry.FIRE_BREATH_PROJECTILE.get(), NoopRenderer::new);
         event.registerEntityRenderer(EntityRegistry.POISON_BREATH_PROJECTILE.get(), NoopRenderer::new);
@@ -246,7 +248,6 @@ public class ClientSetup {
         event.registerEntityRenderer(EntityRegistry.MAGIC_ARROW_PROJECTILE.get(), MagicArrowRenderer::new);
         event.registerEntityRenderer(EntityRegistry.FIRE_ARROW_PROJECTILE.get(), FireArrowRenderer::new);
         event.registerEntityRenderer(EntityRegistry.FIERY_DAGGER_PROJECTILE.get(), FieryDaggerRenderer::new);
-        event.registerEntityRenderer(EntityRegistry.STONE_LANCE_PROJECTILE.get(), StoneLanceRenderer::new);
         event.registerEntityRenderer(EntityRegistry.FIRE_ERUPTION_AOE.get(), NoopRenderer::new);
         event.registerEntityRenderer(EntityRegistry.FROZEN_HUMANOID.get(), FrozenHumanoidRenderer::new);
         event.registerEntityRenderer(EntityRegistry.SMALL_FIREBALL_PROJECTILE.get(), (context) -> new FireballRenderer(context, 0.75f));
